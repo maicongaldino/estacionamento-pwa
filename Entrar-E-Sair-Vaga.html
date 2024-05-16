@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos de Estacionamento</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+
+        ol {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        em {
+            font-style: italic;
+            color: #FFD700; /* cor ouro */
+        }
+
+        .encerramento {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .nested-list {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Procedimentos para Entrar e Sair da Vaga</h1>
+
+    <hr>
+
+    <h2>Entrar na vaga:</h2>
+    <ol>
+        <li>Seta para a direita
+            <ul class="nested-list">
+                <li>Freio</li>
+                <li>Embreagem</li>
+                <li>Primeira marcha</li>
+                <li>Freio de mão</li>
+                <li><em>OLHAR PARA FORA</em></li>
+            </ul>
+        </li>
+        <li>Soltar o freio e deixar o carro ir até a baliza da esquerda sumir da janela de trás. Assim que sumir:
+            <ul class="nested-list">
+                <li>Freio</li>
+                <li>Marcha ré</li>
+            </ul>
+        </li>
+        <li>Volante todo para a direita
+            <ul class="nested-list">
+                <li><em>OLHAR PARA FORA</em></li>
+            </ul>
+            <p>Ir dando ré até a terceira baliza ficar no meio do banco de trás do motorista.</p>
+        </li>
+        <li>Volante todo para a esquerda, Seta para a direita.
+            <ul class="nested-list">
+                <li><em>OLHAR PARA FORA</em></li>
+                <li>Ir devagar só na embreagem até a baliza começar a aparecer no retrovisor do passageiro.</li>
+                <li>Assim que começar a aparecer, olhar para o retrovisor do meio e encostar tendo cuidado para não bater, depois embreagem e freio para parar.</li>
+            </ul>
+        </li>
+        <li>Botar a primeira, alinhar o volante e chegar um pouco para frente para parar no meio da vaga.</li>
+    </ol>
+
+    <div class="encerramento">
+        <h3>Encerramento:</h3>
+        <ol>
+            <li>Alinhar o volante.</li>
+            <li>Desligar a seta</li>
+            <li>Marcha neutra</li>
+            <li>Freio de mão</li>
+            <li>Tirar os pés dos pedais</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <h2>Sair da vaga:</h2>
+    <ol>
+        <li>Seta para a esquerda
+            <ul class="nested-list">
+                <li>Freio</li>
+                <li>Embreagem</li>
+                <li>Marcha ré</li>
+                <li>Freio de mão</li>
+                <li><em>OLHAR PARA FORA</em></li>
+            </ul>
+        </li>
+        <li>Bem devagar só na embreagem chegar um pouco para trás até encostar na baliza, SEM BATER.
+            <ul class="nested-list">
+                <li>Embreagem</li>
+                <li>Freio</li>
+                <li>Primeira marcha</li>
+            </ul>
+        </li>
+        <li>Volante todo para a esquerda.
+            <ul class="nested-list">
+                <li><em>OLHAR PARA FORA (PARADO)</em></li>
+            </ul>
+        </li>
+        <li>Ir saindo devagar.
+            <ul class="nested-list">
+                <li><em>OLHAR PARA FORA (EM MOVIMENTO 1)</em></li>
+                <li><em>OLHAR PARA FORA (EM MOVIMENTO 2)</em></li>
+            </ul>
+        </li>
+        <li>Parar o carro até a baliza ficar um pouco depois do retrovisor do passageiro.
+            <ul class="nested-list">
+                <li>Volante todo para a direita</li>
+                <li><em>OLHAR PARA FORA (PARADO)</em></li>
+                <li>Na embreagem, ir um pouco para frente até as três balizas de trás aparecerem e para o carro.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="encerramento">
+        <h3>Encerramento:</h3>
+        <ol>
+            <li>Alinha o volante.</li>
+            <li>Desligar a seta</li>
+            <li>Marcha neutra</li>
+            <li>Freio de mão</li>
+            <li>Tirar os pés dos pedais</li>
+        </ol>
+    </div>
+</body>
+</html>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then((registration) => {
+            console.log('Service Worker registrado com sucesso:', registration);
+        }).catch((error) => {
+            console.log('Falha ao registrar o Service Worker:', error);
+        });
+    }
+</script>

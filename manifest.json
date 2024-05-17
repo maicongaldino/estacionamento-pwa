@@ -1,7 +1,7 @@
 {
   "name": "Procedimentos de Estacionamento",
   "short_name": "Estacionamento",
-  "start_url": "/",
+  "start_url": "/estacionamento-pwa/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
